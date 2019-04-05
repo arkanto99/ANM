@@ -1,0 +1,13 @@
+ Resolucion polo metodo de gauss con pivote parcial do sistema Au=b
+ Introduza a dimension do matriz b
+ Introduza os elementos non nulos da matriz A
+ Fila            1
+ Fila            2
+ Fila            3
+ Fila            4
+ A matriz A es:
+  0.6000E+01 -0.2000E+01  0.2000E+01  0.4000E+01
+  0.1200E+02 -0.8000E+01  0.6000E+01  0.1000E+02
+  0.3000E+01 -0.1300E+02  0.9000E+01  0.3000E+01
+ -0.6000E+01  0.4000E+01  0.1000E+01 -0.1800E+02
+ Introduza os elementos de b, termo independente 

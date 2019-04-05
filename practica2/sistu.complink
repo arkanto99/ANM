@@ -1,0 +1,1 @@
+f95 -o sistu.out sistu_ppal.f95 datsissim_interf.f95 sistu_interf.f95 sistub_interf.f95 sistub.f95   datsissim.f95  sistu.f95 

@@ -1,0 +1,1 @@
+f95 -o gausspp.out gausspp_ppal.f95 datsissim_interf.f95 gausspp_interf.f95  residuo_interf.f95 sistupf_interf.f95 datsissim.f95  gausspp.f95  sistupf.f95 residuo.f95
