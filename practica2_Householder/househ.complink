@@ -1,0 +1,1 @@
+f95 -o househ.out househ_ppal.f95 datsis_interf.f95 househ_interf.f95 sistu_interf.f95 residuo_interf.f95 datsis.f95 househ.f95 sistu.f95 residuo.f95
