@@ -16,7 +16,7 @@ real(8)::piv,factor
 n=size(b)
 deter=1.
 
-!etapa k-esima da eliminacion
+!etapa k-esima da eliminacion //Cambio de etapa en el proceso de eliminacion
 do k=1,n-1
 	piv=a(k,k)!comprobacion de que o k-esimo pivote non e nulo		
 	if(abs(piv)<1.e-12) then
@@ -25,12 +25,13 @@ do k=1,n-1
 	end if	
 	deter=deter*piv !actualizacion do determinante
 	!eliminacion
-	do i=k+1,n
+	do i=k+1,n ! Cambio de fila
 		factor=a(i,k)/piv
-		do j=k+1,n
+		!a(i,k)=0 !Esta liena solo facilita el visionado de la matriz MA, triangular inferior
+		do j=k+1,n !Iteracion a lo largo de los elementos de la i-esima fila
 			a(i,j)=a(i,j)-factor*a(k,j)
 		end do
-		b(i)=b(i)-factor*b(k)
+		b(i)=b(i)-factor*b(k) !Actualizacion del termino independiente
 	end do
 end do
 !comprobacion de que o

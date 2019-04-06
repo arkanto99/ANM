@@ -25,8 +25,8 @@ do k=1,n-1
 	p=k
 	do i=k+1,n
 		if(abs(piv)<abs(a(l(i),k)))then
-			piv=a(l(i),k)
-			p=i !Lugar donde encontramos el pivote, MAXIMO
+			piv=a(l(i),k) !Novo pivote
+			p=i !Fila na que encontramos el pivote, MAXIMO
 		end if
 	end do
 	!comprobacion de que o k-esimo pivote non e nulo
@@ -39,13 +39,14 @@ do k=1,n-1
 	deter=deter*piv
 	if (p /= k) then !Equivalente en C: if(p!=k)
 		deter = -deter !Cambiamos de signo porque realizamos un PERMUTACION
-		m=l(k)
+		m=l(k) !Actualizacion lo vector de situacion dos pivotes l
 		l(k)=l(p)
 		l(p)=m
 	endif
 	piv=a(l(k),k)
 	lk=l(k) !Facilita o acceso, xa que non e necesario buscar no vector sempre que se precise este valor
-	!Eliminación
+
+	!Eliminación de Gauss (so que en lugar de elixir a fila i-esima, eliximos a fila l(i)-esima
 	do i=k+1,n
 		li=l(i) !Facilita o acceso, xa que non e necesario buscar no vector sempre que se precise este valor
 		z=a(li,k)/piv

@@ -51,7 +51,7 @@ print*,' '
 print*,'La norma del residuo es :'
 print formato4,sqrt(dot_product(r,r))
 print*, ' '
-print*,'A matriz de Householder e (solo son validos os alfa, o resto dos numeros non se corresponden): '
+print*,'A matriz de Householder e (solo son validos os alfa/diagonal_de_A , o resto dos numeros non se corresponden): '
 
 do i=1,n
 	print formato4,a(i,:) !FORMATO

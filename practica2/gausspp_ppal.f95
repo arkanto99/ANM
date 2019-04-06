@@ -16,7 +16,7 @@ real(8),allocatable::a(:,:),aa(:,:)
 real(8),allocatable::b(:),bb(:),u(:),r(:)!r es para el residuo
 integer,allocatable::l(:) !l es para la matriz de permutaciones
 real(8)::deter
-integer::n
+integer::n,i
 
 print*,'Resolucion polo metodo de gauss con pivote parcial do sistema Au=b'
 print*,'Introduza a dimension do matriz b'
@@ -48,6 +48,15 @@ print*,' '
 print*,'La norma del residuo es :'
 print formato4,sqrt(dot_product(r,r))
 
+
+!DATOS SOBRE O METODO
+print*,' '
+print*,'A eleccion das filas dos pivotes foi a seguinte'
+print*, l
+print*,'A matriz MPA, matriz coas permutacions usada no metodo, e (atencion a eleccion de pivotes anterior):  '
+do i=1,n
+	print formato10,a(i,:)
+end do
 !Liberacion de memoria
 deallocate(a,b,u,r)
 deallocate(l)

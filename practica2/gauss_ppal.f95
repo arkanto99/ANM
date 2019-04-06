@@ -48,6 +48,10 @@ print*,' '
 print*,'La norma del residuo es :'
 print formato4,sqrt(dot_product(r,r))
 
+print*, 'La matriz MA,  triangular superior, tiene la siguiente forma: '
+do i=1,n
+	print formato10,a(i,:)
+end do
 !Liberacion de memoria
 deallocate(a,b,u,r)
 
