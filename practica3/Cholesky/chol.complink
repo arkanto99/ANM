@@ -1,0 +1,1 @@
+f95 -o chol.out chol_ppal.f95 datsissim_interf.f95 chol_interf.f95 sistl_interf.f95 sistu_interf.f95 residuo_interf.f95 datsissim.f95 chol.f95 sistl.f95 sistu.f95 residuo.f95
