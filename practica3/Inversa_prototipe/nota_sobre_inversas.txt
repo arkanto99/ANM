@@ -1,0 +1,3 @@
+Para calcular la inversa utilizando cualquiera de los programas escritos sin recurrir a uno especifico, se podría pasar el programa n veces, tomando como término independiente en la iteración i-esima  la columna i-esima de la matriz inicial.
+
+De esta manera, en cada iteracion, obtenermos la columna i-esima de la matriz A
