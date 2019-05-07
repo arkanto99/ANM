@@ -1,1 +1,0 @@
-f95 -o lu.out lu_ppal.f95 datsis_interf.f95 lu_interf.f95 sistl_interf.f95 sistu_interf.f95 residuo_interf.f95  datsis.f95  lu.f95 sistl.f95 sistu.f95  residuo.f95

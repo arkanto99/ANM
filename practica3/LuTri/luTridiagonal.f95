@@ -1,3 +1,6 @@
+
+!NO ACABADA: INCLUIR RESIDUO
+
 program luTridiagonal
 
 implicit none

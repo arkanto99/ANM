@@ -1,5 +1,5 @@
 
-!INTRODUCIR MATRIZ POR FILAS EN CRECIENTE (1a fila: 1 elemento, 2a fila: 1 y 2 elemento...n-1a fila: 1 2 .. n-1 elemento)
+!PROGRAMA SIN HACER; EL QUE APARECE ES CHOLESKY NORMAL!!!!
 
 program chol_ppal
 
