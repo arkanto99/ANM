@@ -38,7 +38,7 @@ print formato4, as
 print*,'Termo independente'
 print formato4,b
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!11Proceso de eliminacion(verificado)!!!!!!!!!!!!!!!!!!1
+!!!!!!!!!!!!!!!!!!!!!!!!!!!Proceso de eliminacion(verificado)!!!!!!!!!!!!!!!!!!1
 x(1)=sqrt(ad(1))
 do i=2,n
 	y(i-1)=as(i-1)/x(i-1)
@@ -46,20 +46,21 @@ do i=2,n
 end do
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!DESCENSO, NO FUNCIONA!!!!!!!!!!!!!!!!!!!!!!!!!
+u(i)=b(i)/x(i)
 do i=2,n
-	b(i)=b(i)-y(i)*b(i-1)
+	u(i)=(b(i)-y(i)*u(i-1))/x(i)
 end do
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!REMONTE, NO FUNCIONA!!!!!!!!!!!!!!!!!!!!!!!!!!
-b(n)=b(n)/x(n)
+u(n)=u(n)/x(n)
 do i=n-1,1,-1
-	b(i)=(b(i)-y(i)*b(i+1))/x(i)
+	u(i)=(u(i)-y(i+1)*u(i+1))/x(i)
 end do
 
 !call residuo(aa,b,u,r)
 
 print*,' '
 print*,'O resultado u ,empregando a factorizacion de Cholesky Tridiagonal, e:'
-print formato10,b
+print formato10,u
 print*,' '
 print*, 'A diagonal principal da factorizacion de Cholesky e:'
 print formato10,x

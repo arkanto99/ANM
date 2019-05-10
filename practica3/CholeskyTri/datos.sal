@@ -11,8 +11,8 @@
  Termo independente
   0.3000E+01  0.2000E+01  0.2000E+01  0.2000E+01  0.3000E+01
   
- O resultado u ,empregando a factorizacion de Cholesky, e:
- -0.7395373171+246 -0.2958149269+247 -0.1109305976+248 -0.4141408976+248 -0.1545632993+249
+ O resultado u ,empregando a factorizacion de Cholesky Tridiagonal, e:
+          Infinity          Infinity          Infinity          Infinity -0.2783416638+248
   
  A diagonal principal da factorizacion de Cholesky e:
   0.2000000000E+01  0.1936491673E+01  0.1932183566E+01  0.1931875477E+01  0.1931853363E+01
