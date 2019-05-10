@@ -1,0 +1,1 @@
+f95 -o iter.out iter_ppal.f95 datsis_interf.f95 gseidel_interf.f95 jacobi_interf.f95 residuo_interf.f95 datsis.f95 jacobi.f95 gseidel.f95 residuo.f95

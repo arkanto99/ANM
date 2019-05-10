@@ -12,7 +12,7 @@ implicit none
 character(len=10)::formato4='(100e12.4)',formato10='(50e18.10)' !FORMATO
 
 real(8),allocatable::a(:,:)
-real(8),allocatable::b(:),u(:),r(:) !r es para el residuo
+real(8),allocatable::b(:),u(:),r(:) !r es para el residuo, u para o resultado
 real(8):: eps
 integer:: nmaxit,metodo,n
 
@@ -34,24 +34,22 @@ read*,nmaxit
 
 select case(metodo)
 	case(1)
-		print*,'Me
-		call jacobi
+		print*,'Metodo de Jacobi'
+		call jacobi(a,b,u,eps,nmaxit)
 	case(2)
-		call gseidel
+		print*,'Metodo de Gauss-Seidel'
+		call gseidel(a,b,u,eps,nmaxit)
 	case default
 		stop
 end select
 
 
 
-call residuo(aa,b,u,r)
+call residuo(a,b,u,r)
 
 print*,' '
-print*,'O resultado u ,empregando a factorizacion de Cholesky, e:'
+print*,'O resultado u ,empregando a factorizacion de elixida, e:'
 print formato10,u
-print*,' '
-print*,'O determinante de A ten o seguinte valor: '
-print*,deter
 print*,' '
 print*,'El residuo r=Au-b es:'
 print formato4,r
@@ -59,6 +57,6 @@ print*,' '
 print*,'La norma del residuo es :'
 print formato4,sqrt(dot_product(r,r))
 
-deallocate(a,aa,b,w,u,r)
+deallocate(a,b,u,r)
 
 end program
