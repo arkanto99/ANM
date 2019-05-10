@@ -42,6 +42,7 @@ do k=2,n
 	end do
 end do	
 
+print*, ' '
 print*,'A factorizacion de Cholesky da Matriz e:'
 do i=1,n
 	print '(100e12.4)',a(i,1:i) !FORMATO

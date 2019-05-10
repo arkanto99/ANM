@@ -1,0 +1,39 @@
+ Resolucion polo metodo de Cholesky do sistema Au=b
+ Introduza a orde do sistema
+ Introduza os elementos non nulos da matriz A
+ Fila            1
+ Fila            2
+ Fila            3
+ Fila            4
+ Fila            5
+ Fila            6
+ La matriz triangular A es: 
+  0.1000E+02  0.3000E+01 -0.1000E+01  0.0000E+00  0.0000E+00  0.1000E+01
+  0.3000E+01  0.8000E+01  0.2000E+01  0.0000E+00  0.0000E+00  0.0000E+00
+ -0.1000E+01  0.2000E+01  0.6000E+01  0.0000E+00  0.0000E+00  0.0000E+00
+  0.0000E+00  0.0000E+00  0.0000E+00  0.4000E+01  0.2000E+01  0.1000E+01
+  0.0000E+00  0.0000E+00  0.0000E+00  0.2000E+01  0.2000E+01  0.0000E+00
+  0.1000E+01  0.0000E+00  0.0000E+00  0.1000E+01  0.0000E+00  0.2000E+01
+ Introduza os elementos de b, termo independente 
+ O termo independiente es: 
+  0.1000000000E+01  0.1000000000E+01  0.1000000000E+01  0.1000000000E+01  0.1000000000E+01  0.1000000000E+01
+  
+ A factorizacion de Cholesky da Matriz e:
+  0.3162E+01
+  0.9487E+00  0.2665E+01
+ -0.3162E+00  0.8632E+00  0.2270E+01
+  0.0000E+00  0.0000E+00  0.0000E+00  0.2000E+01
+  0.0000E+00  0.0000E+00  0.0000E+00  0.1000E+01  0.1000E+01
+  0.3162E+00 -0.1126E+00  0.8685E-01  0.5000E+00 -0.5000E+00  0.1175E+01
+  
+ O resultado u ,empregando a factorizacion de Cholesky, e:
+  0.2574257426E-01  0.7920792079E-01  0.1445544554E+00 -0.3247524752E+00  0.8247524752E+00  0.6495049505E+00
+  
+ O determinante de A ten o seguinte valor: 
+   2019.9999999999998     
+  
+ El residuo r=Au-b es:
+  0.2220E-15  0.2220E-15  0.0000E+00 -0.1110E-15  0.0000E+00  0.0000E+00
+  
+ La norma del residuo es :
+  0.3331E-15
