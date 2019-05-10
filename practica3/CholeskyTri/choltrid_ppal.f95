@@ -5,15 +5,14 @@ program chol_ppal
 
 !Declaracion de modulos/interfaces
 
-use sistu_interf
-use sistl_interf
+
 use residuo_interf
 
 implicit none
 !Declaracion de variables y parametros
 character(len=10)::formato4='(100e12.4)',formato10='(50e18.10)' !FORMATO
 
-real(8),allocatable::as(:),ad(:) !as: subdiagonal, ad: diagonal principal
+real(8),allocatable::as(:),ad(:), x(:), y(:)!as: subdiagonal, ad: diagonal principal
 real(8),allocatable::b(:),w(:),u(:),r(:) !r es para el residuo
 real(8)::deter
 integer:: n,i
@@ -23,15 +22,30 @@ print*,'Caso de Matriz Tridiagonal'
 print*,'Introduza a orde do sistema'
 read*,n
 
-allocate(a(n,n), aa(n,n),b(n), u(n), w(n), r(n))
+allocate(as(n-1), ad(n),x(n),y(n-1),b(n), u(n), w(n), r(n))
 
-call datsissim(a, b)
-aa=a
-call choltrid(a, deter)
+!Lectura de datos
+print*,'Introduza a diagonal principal'
+read*,ad
+print*,'Introduza a diagonal secundaria'
+read*,as
+print*,'Diagonal principal'
+print formato4, ad
+print*,'Diagonal secundaria'
+print formato4, as
 
+!Proceso de eliminacion
+x(1)=sqrt(ad(1))
+do i=2,n
+	y(i-1)=as(i-1)/x(i-1)
+	x(i)=sqrt(a(i)-y(i-1)**2)
+end do
+
+!Descenso
 call sistl(a,b,w)
-!Transponemos a, ya que necesitamos la traspuesta en sistu
+
 a=TRANSPOSE(a) 
+!Remonte
 call sistu(a,w,u)
 
 call residuo(aa,b,u,r)
