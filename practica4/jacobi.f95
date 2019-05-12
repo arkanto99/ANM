@@ -1,4 +1,7 @@
 
+!Factorizacion de Jacobi: A=D-E-F, con D diagonal, E triangular inferior con diagonal nula e F triangular superior con diagonal nula
+!O metodo iterativo e u(k+1)=inv(D)*(E+F)*u(k) + inv(D)*b, con inv(D) matriz inversa de D
+
 subroutine jacobi(a,b,u,eps,nmaxit)
 
 implicit none
@@ -29,21 +32,21 @@ end do
 do k=1,nmaxit
 	error=0
 	xnorm=0
-	v=b
+	v=b !Facemos v=b 
 	do i=1,n
 		do j=1,i-1
-			v(i)=v(i)-a(i,j)*u(j)
+			v(i)=v(i)-a(i,j)*u(j) !Restamos os elementos de E a 'b'
 		end do
 		do j=i+1,n
-			v(i)=v(i)-a(i,j)*u(j)
+			v(i)=v(i)-a(i,j)*u(j) !Restamos os elementos de F a 'b'
 		end do
-		v(i)=v(i)/a(i,i)
+		v(i)=v(i)/a(i,i) !Dividimos entre o elemento diagonal correspondente de D
 		error=error+abs(v(i)-u(i))
 		xnorm=xnorm+abs(u(i))
 	end do
 	u=v
 	
-	error=error/(xnorm+1) !Test de parada
+	error=error/(xnorm+1) !Calculo do erro relativo
 
 	if(mod(k,10).eq.0) then
 		print*,'Iteracion',k
@@ -52,7 +55,7 @@ do k=1,nmaxit
 		print formator4,u
 	end if
 
-	if(error<eps) then
+	if(error<eps) then !Test de parada
 		print*,'Alcanzouse o test de parada'
 		print*,'O numero de iteracions realizadas foi',k
 		return
