@@ -26,3 +26,4 @@
   
  A subdiagonal inferior (A superior e 0) da factorizacion de Cholesky e:
  -0.5000000000E+00 -0.5163977795E+00 -0.5175491695E+00 -0.5176317067E+00
+ Os outros elementos da matriz B son nulos, sendo B unha matriz triangular inferior

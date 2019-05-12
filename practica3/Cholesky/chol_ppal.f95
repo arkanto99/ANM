@@ -30,7 +30,7 @@ aa=a
 call chol(a, deter)
 
 call sistl(a,b,w)
-!Transponemos a, ya que necesitamos la traspuesta en sistu
+!Transponemos a, xa que precisamos Trasposta(B) para facer o remonte
 a=TRANSPOSE(a) 
 call sistu(a,w,u)
 

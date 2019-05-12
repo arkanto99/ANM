@@ -38,19 +38,19 @@ print formato4, as
 print*,'Termo independente'
 print formato4,b
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!Proceso de eliminacion(verificado)!!!!!!!!!!!!!!!!!!1
+!!!!!!!!!!!!!!!!!!!!!!!!!!!Proceso de eliminacion!!!!!!!!!!!!!!!!!!1
 x(1)=sqrt(ad(1))
 do i=2,n
 	y(i-1)=as(i-1)/x(i-1)
 	x(i)=sqrt(ad(i)-y(i-1)**2)
 end do
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!DESCENSO, NO FUNCIONA!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!DESCENSO!!!!!!!!!!!!!!!!!!!!!!!!!
 w(1)=b(1)/x(1)
 do i=2,n
 	w(i)=(b(i)-y(i-1)*w(i-1))/x(i)
 end do
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!REMONTE, NO FUNCIONA!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!REMONTE!!!!!!!!!!!!!!!!!!!!!!!!!!
 u(n)=w(n)/x(n)
 do i=n-1,1,-1
 	u(i)=(w(i)-y(i)*u(i+1))/x(i)
@@ -74,6 +74,7 @@ print formato10,x
 print*,' '
 print*,'A subdiagonal inferior (A superior e 0) da factorizacion de Cholesky e:'
 print formato10,y
+print*,'Os outros elementos da matriz B son nulos, sendo B unha matriz triangular inferior'
 
 
 deallocate(as,ad,u,b,x,y,r,w)
