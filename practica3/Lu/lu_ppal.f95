@@ -57,10 +57,10 @@ print*,' '
 print*,'O determinante de A ten o seguinte valor: '
 print*,deter
 print*,' '
-print*,'El residuo r=Au-b es:'
+print*,'O residuo r=Au-b e:'
 print formato4,r
 print*,' '
-print*,'La norma del residuo es :'
+print*,'A norma do residuo e :'
 print formato4,sqrt(dot_product(r,r))
 
 !Liberacion de memoria
