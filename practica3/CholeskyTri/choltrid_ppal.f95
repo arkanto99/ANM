@@ -6,7 +6,7 @@ program chol_ppal
 !Declaracion de modulos/interfaces
 
 
-use residuo_interf
+use residuoTri_interf
 
 implicit none
 !Declaracion de variables y parametros
@@ -56,23 +56,26 @@ do i=n-1,1,-1
 	u(i)=(u(i)-y(i+1)*u(i+1))/x(i)
 end do
 
-!call residuo(aa,b,u,r)
+call residuoTri(ad,as,as,u,b,r)
 
 print*,' '
 print*,'O resultado u ,empregando a factorizacion de Cholesky Tridiagonal, e:'
 print formato10,u
+print*,' '
+print*,'O residuo r=Au-b e:'
+print formato4,r
+print*,' '
+print*,'A norma do residuo e :'
+print formato4,sqrt(dot_product(r,r))
+print*,' '
 print*,' '
 print*, 'A diagonal principal da factorizacion de Cholesky e:'
 print formato10,x
 print*,' '
 print*,'A subdiagonal inferior (A superior e 0) da factorizacion de Cholesky e:'
 print formato10,y
-!print*,'El residuo r=Au-b es:'
-!print formato4,r
-!print*,' '
-!print*,'La norma del residuo es :'
-!print formato4,sqrt(dot_product(r,r))
 
-!deallocate(a,aa,b,w,u,r)
+
+deallocate(as,ad,u,b,x,y,r,w)
 
 end program
