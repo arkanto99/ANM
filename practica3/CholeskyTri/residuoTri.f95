@@ -1,6 +1,6 @@
-subroutine residuo(ad,au,al,v,b,r)
+subroutine residuoTri(ad,au,al,v,b,r)
 
-use dotTri
+use dotTri_interf
 
 implicit none
 

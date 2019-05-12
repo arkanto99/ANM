@@ -16,7 +16,7 @@ print*,'Introduza a dimension do sistema'
 read*,n
 
 !Reserva de memomia para as diagonais e o termo independente
-allocate(a(n),aa(n),cc(n),b(n-1),c(2:n),u(r),r(n))
+allocate(a(n),aa(n),cc(n),b(n-1),c(2:n),u(n),r(n))
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!LECTURA DE DATOS!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -35,7 +35,7 @@ read*,c(2:n)
 
 !Lectura da diagonal principal
 print*,'Introduza os elementos do termo independente '
-read*,r(1:n)
+read*,u(1:n)
 
 !Impresion de datos lidos
 print*,'A diagonal principal e: '

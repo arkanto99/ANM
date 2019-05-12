@@ -1,10 +1,10 @@
-module residuo_interf
+module residuoTri_interf
 
 interface
-	subroutine residuo(a,b,u,r)
-		real(8),dimension(:,:),intent(in):: a !matriz de S.E.L
-		real(8),dimension(:),intent(in)::b,u
-		real(8),dimension(:),intent(out)::r !Residuo
+	subroutine residuoTri(ad,au,al,v,b,r)
+		real(8),dimension(:),intent(in):: ad, au, al !!ad= diagonal principal; au= 			diagonal superior; !al=diagonal inferior
+		real(8),dimension(:),intent(in)::v, b !v= resultado, b=termo independente 			
+		real(8),dimension(:),intent(inout)::r
 	end subroutine
 end interface
 

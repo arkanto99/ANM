@@ -1,1 +1,0 @@
-f95 -o choltrid.out choltrid_ppal.f95  dotTri_interf.f95 residuoTri_interf.f95  residuoTri.f95 dotTri.f95

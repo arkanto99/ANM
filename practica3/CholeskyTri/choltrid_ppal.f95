@@ -46,7 +46,7 @@ do i=2,n
 end do
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!DESCENSO, NO FUNCIONA!!!!!!!!!!!!!!!!!!!!!!!!!
-u(i)=b(i)/x(i)
+u(1)=b(1)/x(1)
 do i=2,n
 	u(i)=(b(i)-y(i)*u(i-1))/x(i)
 end do

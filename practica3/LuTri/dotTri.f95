@@ -8,7 +8,7 @@ real(8),dimension(:),intent(in)::ad,au,al !ad= diagonal principal; au= diagonal 
 real(8),dimension(:),intent(in)::v ! v= termino independiente
 real(8),dimension(:),intent(out)::w !w= resultado
 
-n=size(ad)7
+n=size(ad)
 !FORMA VECTORIAL DE CALCULO
 w(1:n)=ad*v(1:n)
 w(1:n-1)=w(1:n-1) +au*v(2:n)
