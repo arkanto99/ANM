@@ -46,14 +46,14 @@ do i=2,n
 end do
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!DESCENSO, NO FUNCIONA!!!!!!!!!!!!!!!!!!!!!!!!!
-u(1)=b(1)/x(1)
+w(1)=b(1)/x(1)
 do i=2,n
-	u(i)=(b(i)-y(i)*u(i-1))/x(i)
+	w(i)=(b(i)-y(i-1)*w(i-1))/x(i)
 end do
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!REMONTE, NO FUNCIONA!!!!!!!!!!!!!!!!!!!!!!!!!!
-u(n)=u(n)/x(n)
+u(n)=w(n)/x(n)
 do i=n-1,1,-1
-	u(i)=(u(i)-y(i+1)*u(i+1))/x(i)
+	u(i)=(w(i)-y(i)*u(i+1))/x(i)
 end do
 
 call residuoTri(ad,as,as,u,b,r)

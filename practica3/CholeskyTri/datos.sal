@@ -12,13 +12,13 @@
   0.3000E+01  0.2000E+01  0.2000E+01  0.2000E+01  0.3000E+01
   
  O resultado u ,empregando a factorizacion de Cholesky Tridiagonal, e:
-          Infinity          Infinity          Infinity          Infinity -0.2841038845+248
+  0.1000000000E+01  0.1000000000E+01  0.1000000000E+01  0.1000000000E+01  0.1000000000E+01
   
  O residuo r=Au-b e:
-         NaN         NaN         NaN         NaN   -Infinity
+  0.0000E+00 -0.4441E-15  0.0000E+00  0.0000E+00  0.8882E-15
   
  A norma do residuo e :
-         NaN
+  0.9930E-15
   
   
  A diagonal principal da factorizacion de Cholesky e:
