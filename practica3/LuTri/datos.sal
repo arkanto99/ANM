@@ -1,0 +1,33 @@
+ Introduza a dimension do sistema
+ Introduza os elementos da diagonal principal 
+ Introduza os elementos da diagonal superior 
+ Introduza os elementos da diagonal inferior 
+ Introduza os elementos do termo independente 
+ A diagonal principal e: 
+  0.2000000000E+01  0.2000000000E+01  0.2000000000E+01  0.2000000000E+01
+ A diagonal superior e: 
+ -0.1000000000E+01 -0.1000000000E+01 -0.1000000000E+01
+ A diagonal inferior e: 
+ -0.1000000000E+01 -0.1000000000E+01 -0.1000000000E+01
+ O termo independente e: 
+ -0.3000000000E+01  0.5000000000E+01 -0.7000000000E+01  0.6000000000E+01
+  
+ A solucion do sistema e: 
+ -0.1000000000E+01  0.1000000000E+01 -0.2000000000E+01  0.2000000000E+01
+  
+ O determinante da matriz e: 
+   5.0000000000000000     
+  
+ O residuo r=Au-b e:
+  0.0000E+00  0.0000E+00  0.0000E+00  0.8882E-15
+  
+ A norma do residuo e :
+  0.8882E-15
+  
+  
+ Matriz L (unicos valores non nulos na diagonal, que son 1s, e na subdiagonal inferior)
+ -0.5000E+00 -0.6667E+00 -0.7500E+00
+  
+ Matriz U (unicos valores non nulos na diagonal e na subdiagonal superior)
+  0.2000E+01  0.1500E+01  0.1333E+01  0.1250E+01
+ -0.1000E+01 -0.1000E+01 -0.1000E+01
