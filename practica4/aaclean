@@ -1,0 +1,1 @@
+rm -r datsis_interf.mod gseidel_interf.mod jacobi_interf.mod residuo_interf.mod iter.out

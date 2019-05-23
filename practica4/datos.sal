@@ -1,0 +1,200 @@
+ Resolucion polo metodo de Gauss-Seidel e Jacobi
+ Introduza a orde do sistema
+ Introduza os elementos non nulos da matriz A
+ Fila            1
+ Fila            2
+ Fila            3
+ Fila            4
+ Fila            5
+ Fila            6
+ A matriz  A es: 
+  0.6000E+01  0.4000E+00  0.5000E+00  0.6000E+00  0.7000E+00  0.8000E+00
+  0.4000E+00  0.6000E+01  0.6000E+00  0.7000E+00  0.8000E+00  0.9000E+00
+  0.5000E+00  0.6000E+00  0.6000E+01  0.8000E+00  0.9000E+00  0.1000E+01
+  0.6000E+00  0.7000E+00  0.8000E+00  0.6000E+01  0.1000E+01  0.1100E+01
+  0.7000E+00  0.8000E+00  0.9000E+00  0.1000E+01  0.6000E+01  0.1200E+01
+  0.8000E+00  0.9000E+00  0.1000E+01  0.1100E+01  0.1200E+01  0.6000E+01
+ Introduza os elementos de b, termo independente 
+ O termo independiente es: 
+  0.3000000000E+01  0.3000000000E+01  0.3000000000E+01  0.3000000000E+01  0.3000000000E+01  0.3000000000E+01
+ Elixa o metodo: 
+ 1: Jacobi - 2: Gauss-Seidel
+ Tolerancia?
+ Numero maximo iterantes?
+ Metodo de Jacobi
+ Iteracion           1
+ Error relativo   3.0000000000000000     
+ Vector u:
+  0.5000E+00  0.5000E+00  0.5000E+00  0.5000E+00  0.5000E+00  0.5000E+00
+ Iteracion           2
+ Error relativo   2.0000000000000000     
+ Vector u:
+  0.2500E+00  0.2167E+00  0.1833E+00  0.1500E+00  0.1167E+00  0.8333E-01
+ Iteracion           3
+ Error relativo   1.3722222222222220     
+ Vector u:
+  0.4306E+00  0.4194E+00  0.4061E+00  0.3906E+00  0.3728E+00  0.3528E+00
+ Iteracion           4
+ Error relativo  0.93555555555555536     
+ Vector u:
+  0.3086E+00  0.2825E+00  0.2554E+00  0.2271E+00  0.1973E+00  0.1658E+00
+ Iteracion           5
+ Error relativo  0.63881851851851845     
+ Vector u:
+  0.3921E+00  0.3762E+00  0.3585E+00  0.3388E+00  0.3170E+00  0.2928E+00
+ Iteracion           6
+ Error relativo  0.43602814814814805     
+ Vector u:
+  0.3351E+00  0.3123E+00  0.2882E+00  0.2626E+00  0.2353E+00  0.2060E+00
+ Iteracion           7
+ Error relativo  0.29764428395061721     
+ Vector u:
+  0.3740E+00  0.3559E+00  0.3362E+00  0.3146E+00  0.2911E+00  0.2652E+00
+ Iteracion           8
+ Error relativo  0.20317385185185169     
+ Vector u:
+  0.3475E+00  0.3261E+00  0.3034E+00  0.2791E+00  0.2530E+00  0.2248E+00
+ Iteracion           9
+ Error relativo  0.13868889685871047     
+ Vector u:
+  0.3656E+00  0.3465E+00  0.3258E+00  0.3034E+00  0.2790E+00  0.2524E+00
+ Iteracion          10
+ Error relativo   9.4670470183813554E-002
+ Vector u:
+  0.3532E+00  0.3326E+00  0.3105E+00  0.2868E+00  0.2612E+00  0.2336E+00
+ Iteracion          11
+ Error relativo   6.4623083554603056E-002
+ Vector u:
+  0.3616E+00  0.3421E+00  0.3210E+00  0.2981E+00  0.2734E+00  0.2464E+00
+ Iteracion          12
+ Error relativo   4.4112404478539979E-002
+ Vector u:
+  0.3559E+00  0.3356E+00  0.3138E+00  0.2904E+00  0.2651E+00  0.2377E+00
+ Iteracion          13
+ Error relativo   3.0111598515707105E-002
+ Vector u:
+  0.3598E+00  0.3400E+00  0.3187E+00  0.2957E+00  0.2707E+00  0.2436E+00
+ Iteracion          14
+ Error relativo   2.0554498434681628E-002
+ Vector u:
+  0.3571E+00  0.3370E+00  0.3154E+00  0.2921E+00  0.2669E+00  0.2396E+00
+ Iteracion          15
+ Error relativo   1.4030720021800974E-002
+ Vector u:
+  0.3590E+00  0.3391E+00  0.3176E+00  0.2945E+00  0.2695E+00  0.2423E+00
+ Iteracion          16
+ Error relativo   9.5775192295027012E-003
+ Vector u:
+  0.3577E+00  0.3377E+00  0.3161E+00  0.2928E+00  0.2677E+00  0.2404E+00
+ Iteracion          17
+ Error relativo   6.5377168451633827E-003
+ Vector u:
+  0.3586E+00  0.3386E+00  0.3171E+00  0.2940E+00  0.2689E+00  0.2417E+00
+ Iteracion          18
+ Error relativo   4.4627152937021519E-003
+ Vector u:
+  0.3580E+00  0.3380E+00  0.3164E+00  0.2932E+00  0.2681E+00  0.2409E+00
+ Iteracion          19
+ Error relativo   3.0462970889087171E-003
+ Vector u:
+  0.3584E+00  0.3384E+00  0.3169E+00  0.2937E+00  0.2687E+00  0.2415E+00
+ Iteracion          20
+ Error relativo   2.0794349052167815E-003
+ Vector u:
+  0.3581E+00  0.3381E+00  0.3166E+00  0.2934E+00  0.2683E+00  0.2410E+00
+ Iteracion          21
+ Error relativo   1.4194444595687639E-003
+ Vector u:
+  0.3583E+00  0.3383E+00  0.3168E+00  0.2936E+00  0.2685E+00  0.2413E+00
+ Iteracion          22
+ Error relativo   9.6892793746183870E-004
+ Vector u:
+  0.3582E+00  0.3382E+00  0.3167E+00  0.2935E+00  0.2684E+00  0.2411E+00
+ Iteracion          23
+ Error relativo   6.6140055122665409E-004
+ Vector u:
+  0.3583E+00  0.3383E+00  0.3168E+00  0.2936E+00  0.2685E+00  0.2413E+00
+ Iteracion          24
+ Error relativo   4.5147907522280484E-004
+ Vector u:
+  0.3582E+00  0.3382E+00  0.3167E+00  0.2935E+00  0.2684E+00  0.2412E+00
+ Iteracion          25
+ Error relativo   3.0818443526531292E-004
+ Vector u:
+  0.3582E+00  0.3382E+00  0.3167E+00  0.2935E+00  0.2685E+00  0.2412E+00
+ Iteracion          26
+ Error relativo   2.1036998468404455E-004
+ Vector u:
+  0.3582E+00  0.3382E+00  0.3167E+00  0.2935E+00  0.2684E+00  0.2412E+00
+ Iteracion          27
+ Error relativo   1.4360079676942195E-004
+ Vector u:
+  0.3582E+00  0.3382E+00  0.3167E+00  0.2935E+00  0.2684E+00  0.2412E+00
+ Iteracion          28
+ Error relativo   9.8023436488764437E-005
+ Vector u:
+  0.3582E+00  0.3382E+00  0.3167E+00  0.2935E+00  0.2684E+00  0.2412E+00
+ Iteracion          29
+ Error relativo   6.6911843925848702E-005
+ Vector u:
+  0.3582E+00  0.3382E+00  0.3167E+00  0.2935E+00  0.2684E+00  0.2412E+00
+ Iteracion          30
+ Error relativo   4.5674738796686043E-005
+ Vector u:
+  0.3582E+00  0.3382E+00  0.3167E+00  0.2935E+00  0.2684E+00  0.2412E+00
+ Iteracion          31
+ Error relativo   3.1178064177378451E-005
+ Vector u:
+  0.3582E+00  0.3382E+00  0.3167E+00  0.2935E+00  0.2684E+00  0.2412E+00
+ Iteracion          32
+ Error relativo   2.1282479362672024E-005
+ Vector u:
+  0.3582E+00  0.3382E+00  0.3167E+00  0.2935E+00  0.2684E+00  0.2412E+00
+ Iteracion          33
+ Error relativo   1.4527647555079293E-005
+ Vector u:
+  0.3582E+00  0.3382E+00  0.3167E+00  0.2935E+00  0.2684E+00  0.2412E+00
+ Iteracion          34
+ Error relativo   9.9167272709921317E-006
+ Vector u:
+  0.3582E+00  0.3382E+00  0.3167E+00  0.2935E+00  0.2684E+00  0.2412E+00
+ Iteracion          35
+ Error relativo   6.7692638737459898E-006
+ Vector u:
+  0.3582E+00  0.3382E+00  0.3167E+00  0.2935E+00  0.2684E+00  0.2412E+00
+ Iteracion          36
+ Error relativo   4.6207717665780468E-006
+ Vector u:
+  0.3582E+00  0.3382E+00  0.3167E+00  0.2935E+00  0.2684E+00  0.2412E+00
+ Iteracion          37
+ Error relativo   3.1541881241603509E-006
+ Vector u:
+  0.3582E+00  0.3382E+00  0.3167E+00  0.2935E+00  0.2684E+00  0.2412E+00
+ Iteracion          38
+ Error relativo   2.1530824774740331E-006
+ Vector u:
+  0.3582E+00  0.3382E+00  0.3167E+00  0.2935E+00  0.2684E+00  0.2412E+00
+ Iteracion          39
+ Error relativo   1.4697170783450897E-006
+ Vector u:
+  0.3582E+00  0.3382E+00  0.3167E+00  0.2935E+00  0.2684E+00  0.2412E+00
+ Iteracion          40
+ Error relativo   1.0032445634244880E-006
+ Vector u:
+  0.3582E+00  0.3382E+00  0.3167E+00  0.2935E+00  0.2684E+00  0.2412E+00
+ Iteracion          41
+ Error relativo   6.8482544626768949E-007
+ Vector u:
+  0.3582E+00  0.3382E+00  0.3167E+00  0.2935E+00  0.2684E+00  0.2412E+00
+ Alcanzouse o test de parada
+ O numero de iteracions realizadas foi          41
+ Norma 1 da diferencia entre os dous ultimos iterantes   6.8482544626768949E-007
+  
+ O resultado u ,empregando a factorizacion de elixida, e:
+  0.3582258354E+00  0.3382276447E+00  0.3167201558E+00  0.2935258044E+00  0.2684380359E+00  0.2412151377E+00
+  
+ El residuo r=Au-b es:
+  0.3662E-06  0.4113E-06  0.4526E-06  0.4907E-06  0.5258E-06  0.5583E-06
+  
+ La norma del residuo es :
+  0.1156E-05
