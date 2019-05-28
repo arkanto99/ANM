@@ -8,7 +8,7 @@ real(8),dimension(:,:),intent(inout):: a !matriz de S.E.L
 real(8),dimension(:),intent(inout)::b
 real(8),intent(out):: deter
 
-integer::n !oreden del S.E.L
+integer::n !orden del S.E.L
 integer:: i,j,k
 real(8)::piv,factor
 
@@ -16,7 +16,7 @@ real(8)::piv,factor
 n=size(b)
 deter=1.
 
-!etapa k-esima da eliminacion //Cambio de etapa en el proceso de eliminacion
+!etapa k-esima da eliminacion //Cambio de etapa do proceso de eliminacion
 do k=1,n-1
 	piv=a(k,k)!comprobacion de que o k-esimo pivote non e nulo		
 	if(abs(piv)<1.e-12) then
@@ -27,7 +27,7 @@ do k=1,n-1
 	!eliminacion
 	do i=k+1,n ! Cambio de fila
 		factor=a(i,k)/piv
-		!a(i,k)=0 !Esta liena solo facilita el visionado de la matriz MA, triangular inferior
+		!a(i,k)=0 !Esta linea solo facilita el visionado de la matriz MA, triangular inferior
 		do j=k+1,n !Iteracion a lo largo de los elementos de la i-esima fila
 			a(i,j)=a(i,j)-factor*a(k,j)
 		end do

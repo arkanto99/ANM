@@ -15,7 +15,7 @@ real(8)::piv,z
 !inicializacion do determinante
 n=size(b)
 deter=1.
-!Inicializacion de l
+!Inicializacion de l, vector de permutacions
 l=(/(i,i=1,n)/) !Equivalente a do i=1,n ;  l(i)=i   ;  end do
 
 !etapa k-esima da eliminacion

@@ -19,7 +19,7 @@ do k=1,n-1 !Etapas do metodo: seleccion do k-esimo vector columna
 	do i=k,n
 		alfa=alfa+a(i,k)*a(i,k) !Norma do k-esimo vector columna da A
 	end do
-	alfa=sqrt(alfa)
+	alfa=sqrt(alfa) !Fin do calculo da Norma
 	signo=-sign(signo,a(k,k))!sign devuelve el valor del primer argumento con el signo del segundo
 	alfa=signo*alfa 
 
@@ -49,7 +49,7 @@ do k=1,n-1 !Etapas do metodo: seleccion do k-esimo vector columna
 	a(k,k)=alfa !ERROR EN LOS APUNTES; DONDE PONE a(k,k)=s
 	deter=deter*a(k,k)
 end do
-deter=deter*a(n,n)
-deter=(-1)**(n-1)*deter
+deter=deter*a(n,n)!Calculo do determinante
+deter=(-1)**(n-1)*deter!Axuste do signo do determinante
 
 end subroutine
